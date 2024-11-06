@@ -10,6 +10,10 @@ EEG-basedemotion decoding is essential for unveiling neural mechanisms underlyin
 **Experimental procedures and the experimental setup.** (a) The block-design experimental protocol. (b) Video trial & imagery trial. (c) The 64-channel EEG acquisition system (g.HIamp, g.tec Medical Engineering), the wristband for PPG and GSR signal collection (Psychorus, HuiXin), and the experimental environment.
 This repository contains codes for preprocessing and stimuli material embeddings. You can find the dataset via **OpenNeuro**(doi:10.18112/openneuro.ds005540.v1.0.3) or **ScienceDB**(10.57760/sciencedb.14025).
 
+<img src=".\fima\t1.png" alt="framework" style="zoom:50%;" />
+
+**The summary of key features of the EmoEEG-MC dataset.**
+
 ## Method
 The EEG preprocessing procedures were as follows: First, the data were filtered to $0.1-47 \mathrm{~Hz}$, downsampled to 200 Hz , and then segmented into trials. For imagery trials, we used the 30 seconds before the button press (or 30 seconds before the start of the rating if no button was pressed) for further analysis; for video trials, we selected the last 30 seconds of the video clip presentation for further analysis . Next, we inspected bad channels based on two criteria. First, channels containing more than $30 \%$ outliers were flagged, where outliers are defined as absolute values exceeding three times from the trial's median of absolute. Second, we identified channels with abnormal variance by plotting the variance for each channel across trials to detect significant variance jumps. Suspected bad channels were further verified through visual inspection of the EEG signals and were subsequently interpolated using the average of three neighboring channels. Then we performed Independent Component Analysis (ICA) and manually removed components derived from eye movements and muscle artifacts. Finally, common average referencing and trial reordering were applied. As the order of materials presentation was randomized across subjects, reordering of the trials ensured that the order of EEG data was the same for all subjects to facilitate subsequent analysis.
 
