@@ -6,6 +6,7 @@ EEG-basedemotion decoding is essential for unveiling neural mechanisms underlyin
 
 ## Introduction
 <img src=".\fima\2.png" alt="framework" style="zoom:50%;" />
+
 **Experimental procedures and the experimental setup.** (a) The block-design experimental protocol. (b) Video trial & imagery trial. (c) The 64-channel EEG acquisition system (g.HIamp, g.tec Medical Engineering), the wristband for PPG and GSR signal collection (Psychorus, HuiXin), and the experimental environment.
 This repository contains codes for preprocessing and stimuli material embeddings. You can find the dataset via **OpenNeuro**(doi:10.18112/openneuro.ds005540.v1.0.3) or **ScienceDB**(10.57760/sciencedb.14025).
 
@@ -22,3 +23,24 @@ D E=\frac{1}{2} \ln \left(2 \pi e \sigma^2\right)
 $$
 
 where $x$ is the EEG signal filtered into a frequency band and $\sigma^2$ is the variance of the EEG signal.
+
+## Participants' Behaviour Reports
+The ten behavioral rating items for the participants are as follows: 
+
+- Joy
+- Inspiration
+- Tenderness
+- Sadness
+- Fear
+- Disgust
+- Arousal
+- Valence
+- Familiarity
+- Liking
+
+## Channels
+The EEG channels follow the 10-20 system with 64 channels, and the channel names are as follows:
+
+'Fp1', 'Fpz', 'Fp2', 'AF7', 'AF3','AF4','AF8', 'F7', 'F5','F3','F1','Fz', 'F2', 'F4', 'F6', 'F8', 'FT7', 'FC5', 'FC3', 'FC1','FCz','FC2','FC4', 'FC6', 'FT8', 'T7','C5', 'C3', 'C1', 'Cz', 'C2', 'C4', 'C6', 'T8', 'TP7', 'CP5', 'CP3', 'CP1','CPz','CP2', 'CP4','CP6', 'TP8', 'P7','P5', 'P3', 'P1', 'Pz','P2', 'P4', 'P6', 'P8', 'PO7', 'PO3','POz', 'PO4','PO8', 'O1','Oz','O2', 'F9', 'F10', 'TP9', 'TP10'
+
+The order of the 64 channels mentioned in subsequent files follows the same order as listed above.
