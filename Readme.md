@@ -205,8 +205,6 @@ These files have been preprocessed and reordered in the following sequence: **sa
 
 Each session (`ima` or `vid`) typically includes **21 trials**. For information on participants with missing trials, refer to the **Participants with Missing Trials** section above.
 
----
-
 - **Preprocessing Data on Your Own**
 If you'd like to preprocess the data yourself, follow these steps:
 
@@ -224,6 +222,7 @@ If you'd like to preprocess the data yourself, follow these steps:
    - Use the sequence provided in the **Trial Reordering** section above to rearrange the trials in your preferred order.
 
 ---
+
 ## Authors
 
 Xin XU[^1,†], Xinke SHEN[^1,†,*], Xuyang CHEN[^1], Qingzhu ZHANG[^1], Sitian WANG[^1], Yihan LI[^1], Zongsheng LI[^1,^2], Dan ZHANG[^3], Mingming ZHANG[^1], Quanying LIU[^1,*]
